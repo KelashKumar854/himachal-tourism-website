@@ -1,0 +1,202 @@
+
+/* Main section styling */
+.packages-main {
+    padding-bottom: 3rem !important;
+    padding-top: 3rem !important;
+    background-color: #f4f6fd;
+}
+
+/* Packages container styling */
+.packages-container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 15px;
+}
+
+/* Heading Styling */
+.packages-heading {
+    max-width: 750px;
+    text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.packages-heading h3 {
+    font-size: 40px;
+    line-height: 48px; /* More vertical space for better readability */
+    font-weight: 600;
+    color: #1a1d2d;
+    margin-bottom: 1rem;
+}
+
+.packages-heading p {
+    color: #585858;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+/* Responsive grid for packages */
+.packages-row {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust grid for responsiveness */
+    margin-top: 3rem !important;
+}
+
+/* Package container */
+.package-data-container {
+    position: relative;
+    border-radius: 8px; /* Soft rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    background-color: white; /* Ensure background for container */
+}
+
+.location-image img {
+    border-radius: 4px 4px 0 0; /* Rounded top corners */
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth hover zoom */
+}
+
+/* Badge (Sale/Winter) Styling */
+.top-btn {
+    position: absolute;
+    top: 10px;
+    right: 26px;
+    list-style: none;
+}
+
+.sale, .winter {
+    display: inline-block;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    padding: 4px 12px; /* Slightly larger padding for better visibility */
+    font-weight: 600;
+}
+
+.sale {
+    background: #1a9ddb; /* Sale badge color */
+}
+
+.winter {
+    background: #32bf13; /* Winter badge color */
+}
+
+/* Package details container */
+.package-detail {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+    text-align: center;
+    margin-top: -10px;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Package title styling */
+.package-title a {
+    font-size: 20px; /* Slightly larger title */
+    line-height: 28px;
+    color: #1a1d2d;
+    font-weight: 600;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.package-title a:hover {
+    color: #02ad88; /* Highlight color on hover */
+}
+
+/* Package price styling */
+.package-price {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #585858;
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+
+/* Package time info styling */
+.package-time {
+    margin-top: 2px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-bottom: 12px;
+}
+
+.package-time li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 15px;
+    color: #585858;
+}
+
+.package-time-logo {
+    padding-right: 7px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+/* Button Styling */
+.package-btns{
+    color: white;
+    background: #02ad88;
+    border: 1px solid #02ad88;
+    cursor: pointer;
+    padding: 6px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin: 3px 4px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.package-btns:hover {
+    background: #018165;
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+.package-btns:focus {
+    background: #018165;
+}
+
+/* Hover Effects */
+.package-data-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* .package-data-container:hover .location-image img {
+    transform: scale(1.05); 
+} */
+
+
+@media screen and (max-width: 1024px){
+    .packages-row{
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 3rem !important;
+    }
+    .packages-container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 580px){
+    .packages-row{
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 3rem !important;
+    }
+}
+

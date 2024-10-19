@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+:root {
+  --blue-color: #0868F8;
+  --dark-color: #262626;
+  --grey-color: #808080;
+
+  --thick-font: "IBM Plex Sans", sans-serif;
+  --inter-font: "Inter", system-ui;
+  --hind-font: "Hind", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: .3s ease-in-out all;
+  font-family: "Hind", sans-serif;
+}
